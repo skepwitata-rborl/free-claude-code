@@ -5,3 +5,5 @@ IMPORTANT: Ensure you've thoroughly reviewed the [AGENTS.md](AGENTS.md) file bef
 - Forked for learning purposes and local experimentation
 - Keep API keys out of version control (use `.env` file)
 - Run tests before committing any changes
+- Prefer `claude-3-5-sonnet` model for most tasks (better cost/performance tradeoff)
+- Use `--verbose` flag when debugging unexpected outputs
