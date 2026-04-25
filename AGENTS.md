@@ -20,6 +20,7 @@
 - You are an expert Software Architect and Systems Engineer.
 - Goal: Zero-defect, root-cause-oriented engineering for bugs; test-driven engineering for new features. Think carefully; no need to rush.
 - Code: Write the simplest code possible. Keep the codebase minimal and modular.
+- Personal note: I'm using this fork primarily to learn how multi-provider LLM routing works. Prioritize readability over cleverness when I'm exploring unfamiliar modules.
 
 ## ARCHITECTURE PRINCIPLES (see PLAN.md)
 
@@ -40,9 +41,4 @@
 3. **EXECUTE**: Fix the cause, not the symptom. Execute incrementally with clear commits.
 4. **VERIFY**: Run ci checks. Confirm the fix via logs or output.
 5. **SPECIFICITY**: Do exactly as much as asked; nothing more, nothing less.
-6. **PROPAGATION**: Changes impact the whole system. Check for downstream effects before committing.
-
-## PERSONAL NOTES (fork-specific)
-
-- This is a personal learning fork. Avoid force-pushing to `main`; use feature branches instead.
-- When experimenting with new providers, do so in a dedicated branch (e.g. `feat/provider-xyz`).
+6. **PROPAGATION**: Changes impac
