@@ -8,3 +8,4 @@ IMPORTANT: Ensure you've thoroughly reviewed the [AGENTS.md](AGENTS.md) file bef
 - Prefer `claude-3-5-sonnet` model for most tasks (better cost/performance tradeoff)
 - Use `--verbose` flag when debugging unexpected outputs
 - Set default max_tokens to 2048 (upstream default of 1024 is too low for longer responses)
+- Set default temperature to 0.3 for more deterministic/consistent outputs (upstream default of 1.0 is too random for coding tasks)
