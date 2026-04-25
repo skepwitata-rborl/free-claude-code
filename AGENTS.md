@@ -40,13 +40,9 @@
 3. **EXECUTE**: Fix the cause, not the symptom. Execute incrementally with clear commits.
 4. **VERIFY**: Run ci checks. Confirm the fix via logs or output.
 5. **SPECIFICITY**: Do exactly as much as asked; nothing more, nothing less.
-6. **PROPAGATION**: Changes impact multiple files; propagate updates correctly.
+6. **PROPAGATION**: Changes impact the whole system. Check for downstream effects before committing.
 
-## SUMMARY STANDARDS
+## PERSONAL NOTES (fork-specific)
 
-- Summaries must be technical and granular.
-- Include: [Files Changed], [Logic Altered], [Verification Method], [Residual Risks] (if no residual risks then say none).
-
-## TOOLS
-
-- Prefer built-in tools (grep, read_file, etc.) over manual workflows. Check tool availability before use.
+- This is a personal learning fork. Avoid force-pushing to `main`; use feature branches instead.
+- When experimenting with new providers, do so in a dedicated branch (e.g. `feat/provider-xyz`).
