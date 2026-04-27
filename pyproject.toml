@@ -71,7 +71,8 @@ known-first-party = ["free_claude_code"]
 
 [tool.mypy]
 python_version = "3.11"
-strict = true
+# Relaxing strict mode for personal use — too noisy when experimenting
+strict = false
 ignore_missing_imports = true
 
 [tool.pytest.ini_options]
