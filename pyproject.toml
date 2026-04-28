@@ -78,7 +78,8 @@ ignore_missing_imports = true
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 asyncio_mode = "auto"
-addopts = "--cov=free_claude_code --cov-report=term-missing --cov-report=xml"
+# Removed --cov-report=xml locally — I don't use CI coverage uploads
+addopts = "--cov=free_claude_code --cov-report=term-missing"
 
 [tool.coverage.run]
 source = ["free_claude_code"]
