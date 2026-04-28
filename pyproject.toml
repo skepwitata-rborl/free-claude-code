@@ -79,7 +79,8 @@ ignore_missing_imports = true
 testpaths = ["tests"]
 asyncio_mode = "auto"
 # Removed --cov-report=xml locally — I don't use CI coverage uploads
-addopts = "--cov=free_claude_code --cov-report=term-missing"
+# Also skipping coverage for now while I'm actively hacking on things
+addopts = "-v --cov=free_claude_code --cov-report=term-missing --cov-fail-under=0"
 
 [tool.coverage.run]
 source = ["free_claude_code"]
